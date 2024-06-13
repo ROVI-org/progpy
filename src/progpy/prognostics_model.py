@@ -126,7 +126,7 @@ class PrognosticsModel(ABC):
         params = PrognosticsModel.default_parameters.copy()
 
         # Add params specific to the model
-        params.update(self.__class__.default_parameters)
+        params.update(self.default_parameters)
 
         # Add params specific passed via command line arguments
         params.update(kwargs)
